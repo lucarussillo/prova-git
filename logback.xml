@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d %-5p %c %n%m%n</pattern>
+    </encoder>
+  </appender>
+  <appender name="file" class="ch.qos.logback.core.FileAppender">
+    <File>${user.home}/Temp/log.txt</File>
+    <Append>false</Append>
+    <encoder>
+      <pattern>%m%n</pattern>
+    </encoder>
+  </appender>
+  <logger name="it.unibas.mediapesata" level="warn"/>  
+  <logger name="it.unibas.mediapesata.modello" level="info"/>  
+  <logger name="it.unibas.mediapesata.modello.Studente" level="debug"/>  
+  <root level="WARN">
+    <appender-ref ref="stdout"/>
+    <!--<appender-ref ref="file"/>-->
+  </root>
+</configuration>
