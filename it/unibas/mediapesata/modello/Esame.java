@@ -73,7 +73,7 @@ public class Esame {
              + this.voto + " | " + this.lode;
     }
 
-    public String prova() {
-        return "Prova git";
+    public void prova() {
+        return "Notebook";
     }
 }
